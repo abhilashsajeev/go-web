@@ -1,0 +1,14 @@
+advanced:
+  build: .
+  working_dir: /go/src/github.com/abhilashsajeev/go-web/taskmanager
+  command: go run main.go
+  restart: always
+  volumes:
+    - .:/go/src/github.com/abhilashsajeev/go-web/taskmanager
+  links:
+    - database
+  ports:
+    - 9000:9000
+database:
+  image: mongo:3.0.14
+  command: mongod --smallfiles --quiet --logpath=/dev/null

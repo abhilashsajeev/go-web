@@ -12,5 +12,5 @@ RUN godep restore
 RUN go install github.com/abhilashsajeev/go-web/taskmanager
 # Run the taskmanager command when the container starts.
 ENTRYPOINT /go/bin/taskmanager
-# Service listens on port 8080.
-EXPOSE 8080
+# Service listens on port 9000.
+EXPOSE 9000

@@ -4,8 +4,8 @@ import (
     "log"
     "net/http"
     "github.com/urfave/negroni"
-    "taskmanager/common"
-    "taskmanager/routers"
+    "github.com/abhilashsajeev/go-web/taskmanager/common"
+    "github.com/abhilashsajeev/go-web/taskmanager/routers"
 )
 
 //Entry point of the program
